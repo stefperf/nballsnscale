@@ -1,0 +1,1257 @@
+/Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9 /Users/Stefano/Documents/GitHub/nballsnscale/main.py
+
+========================================================================================================================
+ANALYZING ALL 24 POSSIBLE GAMES WITH THE GIVEN RULES:
+
+GAME RULES
+There are 12 identically looking balls, numbered from 0 to 11, but one of them has a slightly different weight.
+The difference can be noticed only by weighing the balls with a two-plate precision scale.
+Only 3 weighings are allowed, then the right ball and weight must be guessed.
+
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 1 / 24, showing the reasoning made by the solver...
+This is the randomly chosen secret solution:
+the ball nr. 0 is lighter.
+
+Now the solver knows that there exist these 24 possible solutions:
+the ball nr. 0 is lighter
+the ball nr. 0 is heavier
+the ball nr. 1 is lighter
+the ball nr. 1 is heavier
+the ball nr. 2 is lighter
+the ball nr. 2 is heavier
+the ball nr. 3 is lighter
+the ball nr. 3 is heavier
+the ball nr. 4 is lighter
+the ball nr. 4 is heavier
+the ball nr. 5 is lighter
+the ball nr. 5 is heavier
+the ball nr. 6 is lighter
+the ball nr. 6 is heavier
+the ball nr. 7 is lighter
+the ball nr. 7 is heavier
+the ball nr. 8 is lighter
+the ball nr. 8 is heavier
+the ball nr. 9 is lighter
+the ball nr. 9 is heavier
+the ball nr. 10 is lighter
+the ball nr. 10 is heavier
+the ball nr. 11 is lighter
+the ball nr. 11 is heavier
+Weighting nr. 1:
+--- The solver analyzes all possible weighings with a unique information content:
+candidate weighing # 1: (0, 1, 2, 3, 4, 5) vs. (6, 7, 8, 9, 10, 11) => rank: ([12, 12, 0], 6)
+candidate weighing # 2: (2, 3, 4, 5, 6) vs. (7, 8, 9, 10, 11) => rank: ([10, 10, 4], 5)
+candidate weighing # 3: (4, 5, 6, 7) vs. (8, 9, 10, 11) => rank: ([8, 8, 8], 4)
+candidate weighing # 4: (6, 7, 8) vs. (9, 10, 11) => rank: ([12, 6, 6], 3)
+candidate weighing # 5: (8, 9) vs. (10, 11) => rank: ([16, 4, 4], 2)
+candidate weighing # 6: (10,) vs. (11,) => rank: ([20, 2, 2], 1)
+-- The solver chooses candidate weighing # 3: (4, 5, 6, 7) vs. (8, 9, 10, 11) => rank: ([8, 8, 8], 4)
+The solver puts the balls (4, 5, 6, 7) on the left plate and the balls (8, 9, 10, 11) on the right plate.
+The oracle reveals that the two plates have the same weight.
+Now the solver knows that there exist these 8 possible solutions:
+the ball nr. 0 is lighter
+the ball nr. 0 is heavier
+the ball nr. 1 is lighter
+the ball nr. 1 is heavier
+the ball nr. 2 is lighter
+the ball nr. 2 is heavier
+the ball nr. 3 is lighter
+the ball nr. 3 is heavier
+
+Weighting nr. 2:
+--- The solver analyzes all possible weighings with a unique information content:
+candidate weighing # 1: (0, 1, 2, 3, 4, 5) vs. (6, 7, 8, 9, 10, 11) => rank: ([4, 4, 0], 6)
+candidate weighing # 2: (0, 1, 2, 4, 5, 6) vs. (3, 7, 8, 9, 10, 11) => rank: ([4, 4, 0], 6)
+candidate weighing # 3: (0, 1, 4, 5, 6, 7) vs. (2, 3, 8, 9, 10, 11) => rank: ([4, 4, 0], 6)
+candidate weighing # 4: (2, 3, 4, 5, 6) vs. (7, 8, 9, 10, 11) => rank: ([4, 2, 2], 5)
+candidate weighing # 5: (2, 4, 5, 6, 7) vs. (3, 8, 9, 10, 11) => rank: ([4, 2, 2], 5)
+candidate weighing # 6: (1, 2, 3, 5, 6) vs. (7, 8, 9, 10, 11) => rank: ([3, 3, 2], 5)
+candidate weighing # 7: (1, 2, 5, 6, 7) vs. (3, 8, 9, 10, 11) => rank: ([3, 3, 2], 5)
+candidate weighing # 8: (0, 1, 2, 3, 6) vs. (7, 8, 9, 10, 11) => rank: ([4, 4, 0], 5)
+candidate weighing # 9: (0, 1, 2, 6, 7) vs. (3, 8, 9, 10, 11) => rank: ([4, 4, 0], 5)
+candidate weighing # 10: (0, 1, 6, 7, 8) vs. (2, 3, 9, 10, 11) => rank: ([4, 4, 0], 5)
+candidate weighing # 11: (4, 5, 6, 7) vs. (8, 9, 10, 11) => rank: ([8, 0, 0], 4)
+candidate weighing # 12: (3, 5, 6, 7) vs. (8, 9, 10, 11) => rank: ([6, 1, 1], 4)
+candidate weighing # 13: (2, 3, 6, 7) vs. (8, 9, 10, 11) => rank: ([4, 2, 2], 4)
+candidate weighing # 14: (2, 6, 7, 8) vs. (3, 9, 10, 11) => rank: ([4, 2, 2], 4)
+candidate weighing # 15: (1, 2, 3, 7) vs. (8, 9, 10, 11) => rank: ([3, 3, 2], 4)
+candidate weighing # 16: (1, 2, 7, 8) vs. (3, 9, 10, 11) => rank: ([3, 3, 2], 4)
+candidate weighing # 17: (0, 1, 2, 3) vs. (8, 9, 10, 11) => rank: ([4, 4, 0], 4)
+candidate weighing # 18: (0, 1, 2, 8) vs. (3, 9, 10, 11) => rank: ([4, 4, 0], 4)
+candidate weighing # 19: (0, 1, 8, 9) vs. (2, 3, 10, 11) => rank: ([4, 4, 0], 4)
+candidate weighing # 20: (6, 7, 8) vs. (9, 10, 11) => rank: ([8, 0, 0], 3)
+candidate weighing # 21: (3, 7, 8) vs. (9, 10, 11) => rank: ([6, 1, 1], 3)
+candidate weighing # 22: (2, 3, 8) vs. (9, 10, 11) => rank: ([4, 2, 2], 3)
+candidate weighing # 23: (2, 8, 9) vs. (3, 10, 11) => rank: ([4, 2, 2], 3)
+candidate weighing # 24: (1, 2, 3) vs. (9, 10, 11) => rank: ([3, 3, 2], 3)
+candidate weighing # 25: (1, 2, 9) vs. (3, 10, 11) => rank: ([3, 3, 2], 3)
+candidate weighing # 26: (0, 1, 2) vs. (3, 10, 11) => rank: ([4, 4, 0], 3)
+candidate weighing # 27: (0, 1, 10) vs. (2, 3, 11) => rank: ([4, 4, 0], 3)
+candidate weighing # 28: (8, 9) vs. (10, 11) => rank: ([8, 0, 0], 2)
+candidate weighing # 29: (3, 9) vs. (10, 11) => rank: ([6, 1, 1], 2)
+candidate weighing # 30: (2, 3) vs. (10, 11) => rank: ([4, 2, 2], 2)
+candidate weighing # 31: (2, 10) vs. (3, 11) => rank: ([4, 2, 2], 2)
+candidate weighing # 32: (1, 2) vs. (3, 11) => rank: ([3, 3, 2], 2)
+candidate weighing # 33: (0, 1) vs. (2, 3) => rank: ([4, 4, 0], 2)
+candidate weighing # 34: (10,) vs. (11,) => rank: ([8, 0, 0], 1)
+candidate weighing # 35: (3,) vs. (11,) => rank: ([6, 1, 1], 1)
+candidate weighing # 36: (2,) vs. (3,) => rank: ([4, 2, 2], 1)
+-- The solver chooses candidate weighing # 32: (1, 2) vs. (3, 11) => rank: ([3, 3, 2], 2)
+The solver puts the balls (1, 2) on the left plate and the balls (3, 11) on the right plate.
+The oracle reveals that the two plates have the same weight.
+Now the solver knows that there exist these 2 possible solutions:
+the ball nr. 0 is lighter
+the ball nr. 0 is heavier
+
+Weighting nr. 3:
+--- The solver analyzes all possible weighings with a unique information content:
+candidate weighing # 1: (0, 1, 2, 3, 4, 5) vs. (6, 7, 8, 9, 10, 11) => rank: ([1, 1, 0], 6)
+candidate weighing # 2: (2, 3, 4, 5, 6) vs. (7, 8, 9, 10, 11) => rank: ([2, 0, 0], 5)
+candidate weighing # 3: (0, 3, 4, 5, 6) vs. (7, 8, 9, 10, 11) => rank: ([1, 1, 0], 5)
+candidate weighing # 4: (4, 5, 6, 7) vs. (8, 9, 10, 11) => rank: ([2, 0, 0], 4)
+candidate weighing # 5: (0, 5, 6, 7) vs. (8, 9, 10, 11) => rank: ([1, 1, 0], 4)
+candidate weighing # 6: (6, 7, 8) vs. (9, 10, 11) => rank: ([2, 0, 0], 3)
+candidate weighing # 7: (0, 7, 8) vs. (9, 10, 11) => rank: ([1, 1, 0], 3)
+candidate weighing # 8: (8, 9) vs. (10, 11) => rank: ([2, 0, 0], 2)
+candidate weighing # 9: (0, 9) vs. (10, 11) => rank: ([1, 1, 0], 2)
+candidate weighing # 10: (10,) vs. (11,) => rank: ([2, 0, 0], 1)
+candidate weighing # 11: (0,) vs. (11,) => rank: ([1, 1, 0], 1)
+-- The solver chooses candidate weighing # 11: (0,) vs. (11,) => rank: ([1, 1, 0], 1)
+The solver puts the ball 0 on the left plate and the ball 11 on the right plate.
+The oracle reveals that the right plate is heavier.
+Now the solver knows that there exists this 1 possible solution:
+the ball nr. 0 is lighter
+
+The solver has deduced that only one possible solution is left.
+The solver states that the ball nr. 0 is lighter.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 2 / 24...
+This is the randomly chosen secret solution:
+the ball nr. 0 is heavier.
+
+Weighting nr. 1:
+The solver puts the balls (4, 5, 6, 7) on the left plate and the balls (8, 9, 10, 11) on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+Weighting nr. 2:
+The solver puts the balls (1, 2) on the left plate and the balls (3, 11) on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+Weighting nr. 3:
+The solver puts the ball 0 on the left plate and the ball 11 on the right plate.
+The oracle reveals that the left plate is heavier.
+
+The solver states that the ball nr. 0 is heavier.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 3 / 24...
+This is the randomly chosen secret solution:
+the ball nr. 1 is lighter.
+
+Weighting nr. 1:
+The solver puts the balls (4, 5, 6, 7) on the left plate and the balls (8, 9, 10, 11) on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+Weighting nr. 2:
+The solver puts the balls (1, 2) on the left plate and the balls (3, 11) on the right plate.
+The oracle reveals that the right plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 1 on the left plate and the ball 2 on the right plate.
+The oracle reveals that the right plate is heavier.
+
+The solver states that the ball nr. 1 is lighter.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 4 / 24...
+This is the randomly chosen secret solution:
+the ball nr. 1 is heavier.
+
+Weighting nr. 1:
+The solver puts the balls (4, 5, 6, 7) on the left plate and the balls (8, 9, 10, 11) on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+Weighting nr. 2:
+The solver puts the balls (1, 2) on the left plate and the balls (3, 11) on the right plate.
+The oracle reveals that the left plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 1 on the left plate and the ball 2 on the right plate.
+The oracle reveals that the left plate is heavier.
+
+The solver states that the ball nr. 1 is heavier.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 5 / 24...
+This is the randomly chosen secret solution:
+the ball nr. 2 is lighter.
+
+Weighting nr. 1:
+The solver puts the balls (4, 5, 6, 7) on the left plate and the balls (8, 9, 10, 11) on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+Weighting nr. 2:
+The solver puts the balls (1, 2) on the left plate and the balls (3, 11) on the right plate.
+The oracle reveals that the right plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 1 on the left plate and the ball 2 on the right plate.
+The oracle reveals that the left plate is heavier.
+
+The solver states that the ball nr. 2 is lighter.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 6 / 24...
+This is the randomly chosen secret solution:
+the ball nr. 2 is heavier.
+
+Weighting nr. 1:
+The solver puts the balls (4, 5, 6, 7) on the left plate and the balls (8, 9, 10, 11) on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+Weighting nr. 2:
+The solver puts the balls (1, 2) on the left plate and the balls (3, 11) on the right plate.
+The oracle reveals that the left plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 1 on the left plate and the ball 2 on the right plate.
+The oracle reveals that the right plate is heavier.
+
+The solver states that the ball nr. 2 is heavier.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 7 / 24...
+This is the randomly chosen secret solution:
+the ball nr. 3 is lighter.
+
+Weighting nr. 1:
+The solver puts the balls (4, 5, 6, 7) on the left plate and the balls (8, 9, 10, 11) on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+Weighting nr. 2:
+The solver puts the balls (1, 2) on the left plate and the balls (3, 11) on the right plate.
+The oracle reveals that the left plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 1 on the left plate and the ball 2 on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+The solver states that the ball nr. 3 is lighter.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 8 / 24...
+This is the randomly chosen secret solution:
+the ball nr. 3 is heavier.
+
+Weighting nr. 1:
+The solver puts the balls (4, 5, 6, 7) on the left plate and the balls (8, 9, 10, 11) on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+Weighting nr. 2:
+The solver puts the balls (1, 2) on the left plate and the balls (3, 11) on the right plate.
+The oracle reveals that the right plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 1 on the left plate and the ball 2 on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+The solver states that the ball nr. 3 is heavier.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 9 / 24...
+This is the randomly chosen secret solution:
+the ball nr. 4 is lighter.
+
+Weighting nr. 1:
+The solver puts the balls (4, 5, 6, 7) on the left plate and the balls (8, 9, 10, 11) on the right plate.
+The oracle reveals that the right plate is heavier.
+
+Weighting nr. 2:
+The solver puts the balls (6, 8, 9) on the left plate and the balls (7, 10, 11) on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+Weighting nr. 3:
+The solver puts the ball 5 on the left plate and the ball 11 on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+The solver states that the ball nr. 4 is lighter.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 10 / 24...
+This is the randomly chosen secret solution:
+the ball nr. 4 is heavier.
+
+Weighting nr. 1:
+The solver puts the balls (4, 5, 6, 7) on the left plate and the balls (8, 9, 10, 11) on the right plate.
+The oracle reveals that the left plate is heavier.
+
+Weighting nr. 2:
+The solver puts the balls (6, 8, 9) on the left plate and the balls (7, 10, 11) on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+Weighting nr. 3:
+The solver puts the ball 5 on the left plate and the ball 11 on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+The solver states that the ball nr. 4 is heavier.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 11 / 24...
+This is the randomly chosen secret solution:
+the ball nr. 5 is lighter.
+
+Weighting nr. 1:
+The solver puts the balls (4, 5, 6, 7) on the left plate and the balls (8, 9, 10, 11) on the right plate.
+The oracle reveals that the right plate is heavier.
+
+Weighting nr. 2:
+The solver puts the balls (6, 8, 9) on the left plate and the balls (7, 10, 11) on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+Weighting nr. 3:
+The solver puts the ball 5 on the left plate and the ball 11 on the right plate.
+The oracle reveals that the right plate is heavier.
+
+The solver states that the ball nr. 5 is lighter.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 12 / 24...
+This is the randomly chosen secret solution:
+the ball nr. 5 is heavier.
+
+Weighting nr. 1:
+The solver puts the balls (4, 5, 6, 7) on the left plate and the balls (8, 9, 10, 11) on the right plate.
+The oracle reveals that the left plate is heavier.
+
+Weighting nr. 2:
+The solver puts the balls (6, 8, 9) on the left plate and the balls (7, 10, 11) on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+Weighting nr. 3:
+The solver puts the ball 5 on the left plate and the ball 11 on the right plate.
+The oracle reveals that the left plate is heavier.
+
+The solver states that the ball nr. 5 is heavier.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 13 / 24...
+This is the randomly chosen secret solution:
+the ball nr. 6 is lighter.
+
+Weighting nr. 1:
+The solver puts the balls (4, 5, 6, 7) on the left plate and the balls (8, 9, 10, 11) on the right plate.
+The oracle reveals that the right plate is heavier.
+
+Weighting nr. 2:
+The solver puts the balls (6, 8, 9) on the left plate and the balls (7, 10, 11) on the right plate.
+The oracle reveals that the right plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 10 on the left plate and the ball 11 on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+The solver states that the ball nr. 6 is lighter.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 14 / 24...
+This is the randomly chosen secret solution:
+the ball nr. 6 is heavier.
+
+Weighting nr. 1:
+The solver puts the balls (4, 5, 6, 7) on the left plate and the balls (8, 9, 10, 11) on the right plate.
+The oracle reveals that the left plate is heavier.
+
+Weighting nr. 2:
+The solver puts the balls (6, 8, 9) on the left plate and the balls (7, 10, 11) on the right plate.
+The oracle reveals that the left plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 10 on the left plate and the ball 11 on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+The solver states that the ball nr. 6 is heavier.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 15 / 24...
+This is the randomly chosen secret solution:
+the ball nr. 7 is lighter.
+
+Weighting nr. 1:
+The solver puts the balls (4, 5, 6, 7) on the left plate and the balls (8, 9, 10, 11) on the right plate.
+The oracle reveals that the right plate is heavier.
+
+Weighting nr. 2:
+The solver puts the balls (6, 8, 9) on the left plate and the balls (7, 10, 11) on the right plate.
+The oracle reveals that the left plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 8 on the left plate and the ball 9 on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+The solver states that the ball nr. 7 is lighter.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 16 / 24...
+This is the randomly chosen secret solution:
+the ball nr. 7 is heavier.
+
+Weighting nr. 1:
+The solver puts the balls (4, 5, 6, 7) on the left plate and the balls (8, 9, 10, 11) on the right plate.
+The oracle reveals that the left plate is heavier.
+
+Weighting nr. 2:
+The solver puts the balls (6, 8, 9) on the left plate and the balls (7, 10, 11) on the right plate.
+The oracle reveals that the right plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 8 on the left plate and the ball 9 on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+The solver states that the ball nr. 7 is heavier.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 17 / 24...
+This is the randomly chosen secret solution:
+the ball nr. 8 is lighter.
+
+Weighting nr. 1:
+The solver puts the balls (4, 5, 6, 7) on the left plate and the balls (8, 9, 10, 11) on the right plate.
+The oracle reveals that the left plate is heavier.
+
+Weighting nr. 2:
+The solver puts the balls (6, 8, 9) on the left plate and the balls (7, 10, 11) on the right plate.
+The oracle reveals that the right plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 8 on the left plate and the ball 9 on the right plate.
+The oracle reveals that the right plate is heavier.
+
+The solver states that the ball nr. 8 is lighter.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 18 / 24...
+This is the randomly chosen secret solution:
+the ball nr. 8 is heavier.
+
+Weighting nr. 1:
+The solver puts the balls (4, 5, 6, 7) on the left plate and the balls (8, 9, 10, 11) on the right plate.
+The oracle reveals that the right plate is heavier.
+
+Weighting nr. 2:
+The solver puts the balls (6, 8, 9) on the left plate and the balls (7, 10, 11) on the right plate.
+The oracle reveals that the left plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 8 on the left plate and the ball 9 on the right plate.
+The oracle reveals that the left plate is heavier.
+
+The solver states that the ball nr. 8 is heavier.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 19 / 24...
+This is the randomly chosen secret solution:
+the ball nr. 9 is lighter.
+
+Weighting nr. 1:
+The solver puts the balls (4, 5, 6, 7) on the left plate and the balls (8, 9, 10, 11) on the right plate.
+The oracle reveals that the left plate is heavier.
+
+Weighting nr. 2:
+The solver puts the balls (6, 8, 9) on the left plate and the balls (7, 10, 11) on the right plate.
+The oracle reveals that the right plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 8 on the left plate and the ball 9 on the right plate.
+The oracle reveals that the left plate is heavier.
+
+The solver states that the ball nr. 9 is lighter.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 20 / 24...
+This is the randomly chosen secret solution:
+the ball nr. 9 is heavier.
+
+Weighting nr. 1:
+The solver puts the balls (4, 5, 6, 7) on the left plate and the balls (8, 9, 10, 11) on the right plate.
+The oracle reveals that the right plate is heavier.
+
+Weighting nr. 2:
+The solver puts the balls (6, 8, 9) on the left plate and the balls (7, 10, 11) on the right plate.
+The oracle reveals that the left plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 8 on the left plate and the ball 9 on the right plate.
+The oracle reveals that the right plate is heavier.
+
+The solver states that the ball nr. 9 is heavier.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 21 / 24...
+This is the randomly chosen secret solution:
+the ball nr. 10 is lighter.
+
+Weighting nr. 1:
+The solver puts the balls (4, 5, 6, 7) on the left plate and the balls (8, 9, 10, 11) on the right plate.
+The oracle reveals that the left plate is heavier.
+
+Weighting nr. 2:
+The solver puts the balls (6, 8, 9) on the left plate and the balls (7, 10, 11) on the right plate.
+The oracle reveals that the left plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 10 on the left plate and the ball 11 on the right plate.
+The oracle reveals that the right plate is heavier.
+
+The solver states that the ball nr. 10 is lighter.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 22 / 24...
+This is the randomly chosen secret solution:
+the ball nr. 10 is heavier.
+
+Weighting nr. 1:
+The solver puts the balls (4, 5, 6, 7) on the left plate and the balls (8, 9, 10, 11) on the right plate.
+The oracle reveals that the right plate is heavier.
+
+Weighting nr. 2:
+The solver puts the balls (6, 8, 9) on the left plate and the balls (7, 10, 11) on the right plate.
+The oracle reveals that the right plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 10 on the left plate and the ball 11 on the right plate.
+The oracle reveals that the left plate is heavier.
+
+The solver states that the ball nr. 10 is heavier.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 23 / 24...
+This is the randomly chosen secret solution:
+the ball nr. 11 is lighter.
+
+Weighting nr. 1:
+The solver puts the balls (4, 5, 6, 7) on the left plate and the balls (8, 9, 10, 11) on the right plate.
+The oracle reveals that the left plate is heavier.
+
+Weighting nr. 2:
+The solver puts the balls (6, 8, 9) on the left plate and the balls (7, 10, 11) on the right plate.
+The oracle reveals that the left plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 10 on the left plate and the ball 11 on the right plate.
+The oracle reveals that the left plate is heavier.
+
+The solver states that the ball nr. 11 is lighter.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 24 / 24...
+This is the randomly chosen secret solution:
+the ball nr. 11 is heavier.
+
+Weighting nr. 1:
+The solver puts the balls (4, 5, 6, 7) on the left plate and the balls (8, 9, 10, 11) on the right plate.
+The oracle reveals that the right plate is heavier.
+
+Weighting nr. 2:
+The solver puts the balls (6, 8, 9) on the left plate and the balls (7, 10, 11) on the right plate.
+The oracle reveals that the right plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 10 on the left plate and the ball 11 on the right plate.
+The oracle reveals that the right plate is heavier.
+
+The solver states that the ball nr. 11 is heavier.
+The oracle reveals that the solver has won this game.
+
+
+THE SOLVER WON 24 / 24 GAMES. ON AVERAGE, THE SOLVER WAS 100.00% SURE OF ITS GUESS.
+========================================================================================================================
+
+
+========================================================================================================================
+ANALYZING ALL 26 POSSIBLE GAMES WITH THE GIVEN RULES:
+
+GAME RULES
+There are 13 identically looking balls, numbered from 0 to 12, but one of them has a slightly different weight.
+The difference can be noticed only by weighing the balls with a two-plate precision scale.
+Only 3 weighings are allowed, then the right ball and weight must be guessed.
+
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 1 / 26, showing the reasoning made by the solver...
+This is the randomly chosen secret solution:
+the ball nr. 0 is lighter.
+
+Now the solver knows that there exist these 26 possible solutions:
+the ball nr. 0 is lighter
+the ball nr. 0 is heavier
+the ball nr. 1 is lighter
+the ball nr. 1 is heavier
+the ball nr. 2 is lighter
+the ball nr. 2 is heavier
+the ball nr. 3 is lighter
+the ball nr. 3 is heavier
+the ball nr. 4 is lighter
+the ball nr. 4 is heavier
+the ball nr. 5 is lighter
+the ball nr. 5 is heavier
+the ball nr. 6 is lighter
+the ball nr. 6 is heavier
+the ball nr. 7 is lighter
+the ball nr. 7 is heavier
+the ball nr. 8 is lighter
+the ball nr. 8 is heavier
+the ball nr. 9 is lighter
+the ball nr. 9 is heavier
+the ball nr. 10 is lighter
+the ball nr. 10 is heavier
+the ball nr. 11 is lighter
+the ball nr. 11 is heavier
+the ball nr. 12 is lighter
+the ball nr. 12 is heavier
+Weighting nr. 1:
+--- The solver analyzes all possible weighings with a unique information content:
+candidate weighing # 1: (1, 2, 3, 4, 5, 6) vs. (7, 8, 9, 10, 11, 12) => rank: ([12, 12, 2], 6)
+candidate weighing # 2: (3, 4, 5, 6, 7) vs. (8, 9, 10, 11, 12) => rank: ([10, 10, 6], 5)
+candidate weighing # 3: (5, 6, 7, 8) vs. (9, 10, 11, 12) => rank: ([10, 8, 8], 4)
+candidate weighing # 4: (7, 8, 9) vs. (10, 11, 12) => rank: ([14, 6, 6], 3)
+candidate weighing # 5: (9, 10) vs. (11, 12) => rank: ([18, 4, 4], 2)
+candidate weighing # 6: (11,) vs. (12,) => rank: ([22, 2, 2], 1)
+-- The solver chooses candidate weighing # 3: (5, 6, 7, 8) vs. (9, 10, 11, 12) => rank: ([10, 8, 8], 4)
+The solver puts the balls (5, 6, 7, 8) on the left plate and the balls (9, 10, 11, 12) on the right plate.
+The oracle reveals that the two plates have the same weight.
+Now the solver knows that there exist these 10 possible solutions:
+the ball nr. 0 is lighter
+the ball nr. 0 is heavier
+the ball nr. 1 is lighter
+the ball nr. 1 is heavier
+the ball nr. 2 is lighter
+the ball nr. 2 is heavier
+the ball nr. 3 is lighter
+the ball nr. 3 is heavier
+the ball nr. 4 is lighter
+the ball nr. 4 is heavier
+
+Weighting nr. 2:
+--- The solver analyzes all possible weighings with a unique information content:
+candidate weighing # 1: (1, 2, 3, 4, 5, 6) vs. (7, 8, 9, 10, 11, 12) => rank: ([4, 4, 2], 6)
+candidate weighing # 2: (1, 2, 3, 5, 6, 7) vs. (4, 8, 9, 10, 11, 12) => rank: ([4, 4, 2], 6)
+candidate weighing # 3: (1, 2, 5, 6, 7, 8) vs. (3, 4, 9, 10, 11, 12) => rank: ([4, 4, 2], 6)
+candidate weighing # 4: (0, 1, 2, 3, 4, 6) vs. (7, 8, 9, 10, 11, 12) => rank: ([5, 5, 0], 6)
+candidate weighing # 5: (0, 1, 2, 3, 6, 7) vs. (4, 8, 9, 10, 11, 12) => rank: ([5, 5, 0], 6)
+candidate weighing # 6: (0, 1, 2, 6, 7, 8) vs. (3, 4, 9, 10, 11, 12) => rank: ([5, 5, 0], 6)
+candidate weighing # 7: (3, 4, 5, 6, 7) vs. (8, 9, 10, 11, 12) => rank: ([6, 2, 2], 5)
+candidate weighing # 8: (3, 5, 6, 7, 8) vs. (4, 9, 10, 11, 12) => rank: ([6, 2, 2], 5)
+candidate weighing # 9: (2, 3, 4, 6, 7) vs. (8, 9, 10, 11, 12) => rank: ([4, 3, 3], 5)
+candidate weighing # 10: (2, 3, 6, 7, 8) vs. (4, 9, 10, 11, 12) => rank: ([4, 3, 3], 5)
+candidate weighing # 11: (1, 2, 3, 4, 7) vs. (8, 9, 10, 11, 12) => rank: ([4, 4, 2], 5)
+candidate weighing # 12: (1, 2, 3, 7, 8) vs. (4, 9, 10, 11, 12) => rank: ([4, 4, 2], 5)
+candidate weighing # 13: (1, 2, 7, 8, 9) vs. (3, 4, 10, 11, 12) => rank: ([4, 4, 2], 5)
+candidate weighing # 14: (0, 1, 2, 3, 4) vs. (8, 9, 10, 11, 12) => rank: ([5, 5, 0], 5)
+candidate weighing # 15: (0, 1, 2, 3, 8) vs. (4, 9, 10, 11, 12) => rank: ([5, 5, 0], 5)
+candidate weighing # 16: (0, 1, 2, 8, 9) vs. (3, 4, 10, 11, 12) => rank: ([5, 5, 0], 5)
+candidate weighing # 17: (5, 6, 7, 8) vs. (9, 10, 11, 12) => rank: ([10, 0, 0], 4)
+candidate weighing # 18: (4, 6, 7, 8) vs. (9, 10, 11, 12) => rank: ([8, 1, 1], 4)
+candidate weighing # 19: (3, 4, 7, 8) vs. (9, 10, 11, 12) => rank: ([6, 2, 2], 4)
+candidate weighing # 20: (3, 7, 8, 9) vs. (4, 10, 11, 12) => rank: ([6, 2, 2], 4)
+candidate weighing # 21: (2, 3, 4, 8) vs. (9, 10, 11, 12) => rank: ([4, 3, 3], 4)
+candidate weighing # 22: (2, 3, 8, 9) vs. (4, 10, 11, 12) => rank: ([4, 3, 3], 4)
+candidate weighing # 23: (1, 2, 3, 4) vs. (9, 10, 11, 12) => rank: ([4, 4, 2], 4)
+candidate weighing # 24: (1, 2, 3, 9) vs. (4, 10, 11, 12) => rank: ([4, 4, 2], 4)
+candidate weighing # 25: (1, 2, 9, 10) vs. (3, 4, 11, 12) => rank: ([4, 4, 2], 4)
+candidate weighing # 26: (0, 1, 2, 3) vs. (4, 10, 11, 12) => rank: ([5, 5, 0], 4)
+candidate weighing # 27: (0, 1, 2, 10) vs. (3, 4, 11, 12) => rank: ([5, 5, 0], 4)
+candidate weighing # 28: (7, 8, 9) vs. (10, 11, 12) => rank: ([10, 0, 0], 3)
+candidate weighing # 29: (4, 8, 9) vs. (10, 11, 12) => rank: ([8, 1, 1], 3)
+candidate weighing # 30: (3, 4, 9) vs. (10, 11, 12) => rank: ([6, 2, 2], 3)
+candidate weighing # 31: (3, 9, 10) vs. (4, 11, 12) => rank: ([6, 2, 2], 3)
+candidate weighing # 32: (2, 3, 4) vs. (10, 11, 12) => rank: ([4, 3, 3], 3)
+candidate weighing # 33: (2, 3, 10) vs. (4, 11, 12) => rank: ([4, 3, 3], 3)
+candidate weighing # 34: (1, 2, 3) vs. (4, 11, 12) => rank: ([4, 4, 2], 3)
+candidate weighing # 35: (1, 2, 11) vs. (3, 4, 12) => rank: ([4, 4, 2], 3)
+candidate weighing # 36: (0, 1, 2) vs. (3, 4, 12) => rank: ([5, 5, 0], 3)
+candidate weighing # 37: (9, 10) vs. (11, 12) => rank: ([10, 0, 0], 2)
+candidate weighing # 38: (4, 10) vs. (11, 12) => rank: ([8, 1, 1], 2)
+candidate weighing # 39: (3, 4) vs. (11, 12) => rank: ([6, 2, 2], 2)
+candidate weighing # 40: (3, 11) vs. (4, 12) => rank: ([6, 2, 2], 2)
+candidate weighing # 41: (2, 3) vs. (4, 12) => rank: ([4, 3, 3], 2)
+candidate weighing # 42: (1, 2) vs. (3, 4) => rank: ([4, 4, 2], 2)
+candidate weighing # 43: (11,) vs. (12,) => rank: ([10, 0, 0], 1)
+candidate weighing # 44: (4,) vs. (12,) => rank: ([8, 1, 1], 1)
+candidate weighing # 45: (3,) vs. (4,) => rank: ([6, 2, 2], 1)
+-- The solver chooses candidate weighing # 41: (2, 3) vs. (4, 12) => rank: ([4, 3, 3], 2)
+The solver puts the balls (2, 3) on the left plate and the balls (4, 12) on the right plate.
+The oracle reveals that the two plates have the same weight.
+Now the solver knows that there exist these 4 possible solutions:
+the ball nr. 0 is lighter
+the ball nr. 0 is heavier
+the ball nr. 1 is lighter
+the ball nr. 1 is heavier
+
+Weighting nr. 3:
+--- The solver analyzes all possible weighings with a unique information content:
+candidate weighing # 1: (1, 2, 3, 4, 5, 6) vs. (7, 8, 9, 10, 11, 12) => rank: ([2, 1, 1], 6)
+candidate weighing # 2: (0, 1, 3, 4, 5, 6) vs. (7, 8, 9, 10, 11, 12) => rank: ([2, 2, 0], 6)
+candidate weighing # 3: (0, 3, 4, 5, 6, 7) vs. (1, 8, 9, 10, 11, 12) => rank: ([2, 2, 0], 6)
+candidate weighing # 4: (3, 4, 5, 6, 7) vs. (8, 9, 10, 11, 12) => rank: ([4, 0, 0], 5)
+candidate weighing # 5: (1, 4, 5, 6, 7) vs. (8, 9, 10, 11, 12) => rank: ([2, 1, 1], 5)
+candidate weighing # 6: (0, 1, 5, 6, 7) vs. (8, 9, 10, 11, 12) => rank: ([2, 2, 0], 5)
+candidate weighing # 7: (0, 5, 6, 7, 8) vs. (1, 9, 10, 11, 12) => rank: ([2, 2, 0], 5)
+candidate weighing # 8: (5, 6, 7, 8) vs. (9, 10, 11, 12) => rank: ([4, 0, 0], 4)
+candidate weighing # 9: (1, 6, 7, 8) vs. (9, 10, 11, 12) => rank: ([2, 1, 1], 4)
+candidate weighing # 10: (0, 1, 7, 8) vs. (9, 10, 11, 12) => rank: ([2, 2, 0], 4)
+candidate weighing # 11: (0, 7, 8, 9) vs. (1, 10, 11, 12) => rank: ([2, 2, 0], 4)
+candidate weighing # 12: (7, 8, 9) vs. (10, 11, 12) => rank: ([4, 0, 0], 3)
+candidate weighing # 13: (1, 8, 9) vs. (10, 11, 12) => rank: ([2, 1, 1], 3)
+candidate weighing # 14: (0, 1, 9) vs. (10, 11, 12) => rank: ([2, 2, 0], 3)
+candidate weighing # 15: (0, 9, 10) vs. (1, 11, 12) => rank: ([2, 2, 0], 3)
+candidate weighing # 16: (9, 10) vs. (11, 12) => rank: ([4, 0, 0], 2)
+candidate weighing # 17: (1, 10) vs. (11, 12) => rank: ([2, 1, 1], 2)
+candidate weighing # 18: (0, 1) vs. (11, 12) => rank: ([2, 2, 0], 2)
+candidate weighing # 19: (0, 11) vs. (1, 12) => rank: ([2, 2, 0], 2)
+candidate weighing # 20: (11,) vs. (12,) => rank: ([4, 0, 0], 1)
+candidate weighing # 21: (1,) vs. (12,) => rank: ([2, 1, 1], 1)
+candidate weighing # 22: (0,) vs. (1,) => rank: ([2, 2, 0], 1)
+-- The solver chooses candidate weighing # 21: (1,) vs. (12,) => rank: ([2, 1, 1], 1)
+The solver puts the ball 1 on the left plate and the ball 12 on the right plate.
+The oracle reveals that the two plates have the same weight.
+Now the solver knows that there exist these 2 possible solutions:
+the ball nr. 0 is lighter
+the ball nr. 0 is heavier
+
+The solver has deduced that there are 2 possible solutions left.
+Therefore, the solver will now try to guess with a chance 50.00% of winning.
+The solver states that the ball nr. 0 is heavier.
+The oracle reveals that the solver has lost this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 2 / 26...
+This is the randomly chosen secret solution:
+the ball nr. 0 is heavier.
+
+Weighting nr. 1:
+The solver puts the balls (5, 6, 7, 8) on the left plate and the balls (9, 10, 11, 12) on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+Weighting nr. 2:
+The solver puts the balls (2, 3) on the left plate and the balls (4, 12) on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+Weighting nr. 3:
+The solver puts the ball 1 on the left plate and the ball 12 on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+The solver states that the ball nr. 0 is heavier.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 3 / 26...
+This is the randomly chosen secret solution:
+the ball nr. 1 is lighter.
+
+Weighting nr. 1:
+The solver puts the balls (5, 6, 7, 8) on the left plate and the balls (9, 10, 11, 12) on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+Weighting nr. 2:
+The solver puts the balls (2, 3) on the left plate and the balls (4, 12) on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+Weighting nr. 3:
+The solver puts the ball 1 on the left plate and the ball 12 on the right plate.
+The oracle reveals that the right plate is heavier.
+
+The solver states that the ball nr. 1 is lighter.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 4 / 26...
+This is the randomly chosen secret solution:
+the ball nr. 1 is heavier.
+
+Weighting nr. 1:
+The solver puts the balls (5, 6, 7, 8) on the left plate and the balls (9, 10, 11, 12) on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+Weighting nr. 2:
+The solver puts the balls (2, 3) on the left plate and the balls (4, 12) on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+Weighting nr. 3:
+The solver puts the ball 1 on the left plate and the ball 12 on the right plate.
+The oracle reveals that the left plate is heavier.
+
+The solver states that the ball nr. 1 is heavier.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 5 / 26...
+This is the randomly chosen secret solution:
+the ball nr. 2 is lighter.
+
+Weighting nr. 1:
+The solver puts the balls (5, 6, 7, 8) on the left plate and the balls (9, 10, 11, 12) on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+Weighting nr. 2:
+The solver puts the balls (2, 3) on the left plate and the balls (4, 12) on the right plate.
+The oracle reveals that the right plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 2 on the left plate and the ball 3 on the right plate.
+The oracle reveals that the right plate is heavier.
+
+The solver states that the ball nr. 2 is lighter.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 6 / 26...
+This is the randomly chosen secret solution:
+the ball nr. 2 is heavier.
+
+Weighting nr. 1:
+The solver puts the balls (5, 6, 7, 8) on the left plate and the balls (9, 10, 11, 12) on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+Weighting nr. 2:
+The solver puts the balls (2, 3) on the left plate and the balls (4, 12) on the right plate.
+The oracle reveals that the left plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 2 on the left plate and the ball 3 on the right plate.
+The oracle reveals that the left plate is heavier.
+
+The solver states that the ball nr. 2 is heavier.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 7 / 26...
+This is the randomly chosen secret solution:
+the ball nr. 3 is lighter.
+
+Weighting nr. 1:
+The solver puts the balls (5, 6, 7, 8) on the left plate and the balls (9, 10, 11, 12) on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+Weighting nr. 2:
+The solver puts the balls (2, 3) on the left plate and the balls (4, 12) on the right plate.
+The oracle reveals that the right plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 2 on the left plate and the ball 3 on the right plate.
+The oracle reveals that the left plate is heavier.
+
+The solver states that the ball nr. 3 is lighter.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 8 / 26...
+This is the randomly chosen secret solution:
+the ball nr. 3 is heavier.
+
+Weighting nr. 1:
+The solver puts the balls (5, 6, 7, 8) on the left plate and the balls (9, 10, 11, 12) on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+Weighting nr. 2:
+The solver puts the balls (2, 3) on the left plate and the balls (4, 12) on the right plate.
+The oracle reveals that the left plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 2 on the left plate and the ball 3 on the right plate.
+The oracle reveals that the right plate is heavier.
+
+The solver states that the ball nr. 3 is heavier.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 9 / 26...
+This is the randomly chosen secret solution:
+the ball nr. 4 is lighter.
+
+Weighting nr. 1:
+The solver puts the balls (5, 6, 7, 8) on the left plate and the balls (9, 10, 11, 12) on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+Weighting nr. 2:
+The solver puts the balls (2, 3) on the left plate and the balls (4, 12) on the right plate.
+The oracle reveals that the left plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 2 on the left plate and the ball 3 on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+The solver states that the ball nr. 4 is lighter.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 10 / 26...
+This is the randomly chosen secret solution:
+the ball nr. 4 is heavier.
+
+Weighting nr. 1:
+The solver puts the balls (5, 6, 7, 8) on the left plate and the balls (9, 10, 11, 12) on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+Weighting nr. 2:
+The solver puts the balls (2, 3) on the left plate and the balls (4, 12) on the right plate.
+The oracle reveals that the right plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 2 on the left plate and the ball 3 on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+The solver states that the ball nr. 4 is heavier.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 11 / 26...
+This is the randomly chosen secret solution:
+the ball nr. 5 is lighter.
+
+Weighting nr. 1:
+The solver puts the balls (5, 6, 7, 8) on the left plate and the balls (9, 10, 11, 12) on the right plate.
+The oracle reveals that the right plate is heavier.
+
+Weighting nr. 2:
+The solver puts the balls (7, 9, 10) on the left plate and the balls (8, 11, 12) on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+Weighting nr. 3:
+The solver puts the ball 6 on the left plate and the ball 12 on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+The solver states that the ball nr. 5 is lighter.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 12 / 26...
+This is the randomly chosen secret solution:
+the ball nr. 5 is heavier.
+
+Weighting nr. 1:
+The solver puts the balls (5, 6, 7, 8) on the left plate and the balls (9, 10, 11, 12) on the right plate.
+The oracle reveals that the left plate is heavier.
+
+Weighting nr. 2:
+The solver puts the balls (7, 9, 10) on the left plate and the balls (8, 11, 12) on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+Weighting nr. 3:
+The solver puts the ball 6 on the left plate and the ball 12 on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+The solver states that the ball nr. 5 is heavier.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 13 / 26...
+This is the randomly chosen secret solution:
+the ball nr. 6 is lighter.
+
+Weighting nr. 1:
+The solver puts the balls (5, 6, 7, 8) on the left plate and the balls (9, 10, 11, 12) on the right plate.
+The oracle reveals that the right plate is heavier.
+
+Weighting nr. 2:
+The solver puts the balls (7, 9, 10) on the left plate and the balls (8, 11, 12) on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+Weighting nr. 3:
+The solver puts the ball 6 on the left plate and the ball 12 on the right plate.
+The oracle reveals that the right plate is heavier.
+
+The solver states that the ball nr. 6 is lighter.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 14 / 26...
+This is the randomly chosen secret solution:
+the ball nr. 6 is heavier.
+
+Weighting nr. 1:
+The solver puts the balls (5, 6, 7, 8) on the left plate and the balls (9, 10, 11, 12) on the right plate.
+The oracle reveals that the left plate is heavier.
+
+Weighting nr. 2:
+The solver puts the balls (7, 9, 10) on the left plate and the balls (8, 11, 12) on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+Weighting nr. 3:
+The solver puts the ball 6 on the left plate and the ball 12 on the right plate.
+The oracle reveals that the left plate is heavier.
+
+The solver states that the ball nr. 6 is heavier.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 15 / 26...
+This is the randomly chosen secret solution:
+the ball nr. 7 is lighter.
+
+Weighting nr. 1:
+The solver puts the balls (5, 6, 7, 8) on the left plate and the balls (9, 10, 11, 12) on the right plate.
+The oracle reveals that the right plate is heavier.
+
+Weighting nr. 2:
+The solver puts the balls (7, 9, 10) on the left plate and the balls (8, 11, 12) on the right plate.
+The oracle reveals that the right plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 11 on the left plate and the ball 12 on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+The solver states that the ball nr. 7 is lighter.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 16 / 26...
+This is the randomly chosen secret solution:
+the ball nr. 7 is heavier.
+
+Weighting nr. 1:
+The solver puts the balls (5, 6, 7, 8) on the left plate and the balls (9, 10, 11, 12) on the right plate.
+The oracle reveals that the left plate is heavier.
+
+Weighting nr. 2:
+The solver puts the balls (7, 9, 10) on the left plate and the balls (8, 11, 12) on the right plate.
+The oracle reveals that the left plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 11 on the left plate and the ball 12 on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+The solver states that the ball nr. 7 is heavier.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 17 / 26...
+This is the randomly chosen secret solution:
+the ball nr. 8 is lighter.
+
+Weighting nr. 1:
+The solver puts the balls (5, 6, 7, 8) on the left plate and the balls (9, 10, 11, 12) on the right plate.
+The oracle reveals that the right plate is heavier.
+
+Weighting nr. 2:
+The solver puts the balls (7, 9, 10) on the left plate and the balls (8, 11, 12) on the right plate.
+The oracle reveals that the left plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 9 on the left plate and the ball 10 on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+The solver states that the ball nr. 8 is lighter.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 18 / 26...
+This is the randomly chosen secret solution:
+the ball nr. 8 is heavier.
+
+Weighting nr. 1:
+The solver puts the balls (5, 6, 7, 8) on the left plate and the balls (9, 10, 11, 12) on the right plate.
+The oracle reveals that the left plate is heavier.
+
+Weighting nr. 2:
+The solver puts the balls (7, 9, 10) on the left plate and the balls (8, 11, 12) on the right plate.
+The oracle reveals that the right plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 9 on the left plate and the ball 10 on the right plate.
+The oracle reveals that the two plates have the same weight.
+
+The solver states that the ball nr. 8 is heavier.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 19 / 26...
+This is the randomly chosen secret solution:
+the ball nr. 9 is lighter.
+
+Weighting nr. 1:
+The solver puts the balls (5, 6, 7, 8) on the left plate and the balls (9, 10, 11, 12) on the right plate.
+The oracle reveals that the left plate is heavier.
+
+Weighting nr. 2:
+The solver puts the balls (7, 9, 10) on the left plate and the balls (8, 11, 12) on the right plate.
+The oracle reveals that the right plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 9 on the left plate and the ball 10 on the right plate.
+The oracle reveals that the right plate is heavier.
+
+The solver states that the ball nr. 9 is lighter.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 20 / 26...
+This is the randomly chosen secret solution:
+the ball nr. 9 is heavier.
+
+Weighting nr. 1:
+The solver puts the balls (5, 6, 7, 8) on the left plate and the balls (9, 10, 11, 12) on the right plate.
+The oracle reveals that the right plate is heavier.
+
+Weighting nr. 2:
+The solver puts the balls (7, 9, 10) on the left plate and the balls (8, 11, 12) on the right plate.
+The oracle reveals that the left plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 9 on the left plate and the ball 10 on the right plate.
+The oracle reveals that the left plate is heavier.
+
+The solver states that the ball nr. 9 is heavier.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 21 / 26...
+This is the randomly chosen secret solution:
+the ball nr. 10 is lighter.
+
+Weighting nr. 1:
+The solver puts the balls (5, 6, 7, 8) on the left plate and the balls (9, 10, 11, 12) on the right plate.
+The oracle reveals that the left plate is heavier.
+
+Weighting nr. 2:
+The solver puts the balls (7, 9, 10) on the left plate and the balls (8, 11, 12) on the right plate.
+The oracle reveals that the right plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 9 on the left plate and the ball 10 on the right plate.
+The oracle reveals that the left plate is heavier.
+
+The solver states that the ball nr. 10 is lighter.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 22 / 26...
+This is the randomly chosen secret solution:
+the ball nr. 10 is heavier.
+
+Weighting nr. 1:
+The solver puts the balls (5, 6, 7, 8) on the left plate and the balls (9, 10, 11, 12) on the right plate.
+The oracle reveals that the right plate is heavier.
+
+Weighting nr. 2:
+The solver puts the balls (7, 9, 10) on the left plate and the balls (8, 11, 12) on the right plate.
+The oracle reveals that the left plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 9 on the left plate and the ball 10 on the right plate.
+The oracle reveals that the right plate is heavier.
+
+The solver states that the ball nr. 10 is heavier.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 23 / 26...
+This is the randomly chosen secret solution:
+the ball nr. 11 is lighter.
+
+Weighting nr. 1:
+The solver puts the balls (5, 6, 7, 8) on the left plate and the balls (9, 10, 11, 12) on the right plate.
+The oracle reveals that the left plate is heavier.
+
+Weighting nr. 2:
+The solver puts the balls (7, 9, 10) on the left plate and the balls (8, 11, 12) on the right plate.
+The oracle reveals that the left plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 11 on the left plate and the ball 12 on the right plate.
+The oracle reveals that the right plate is heavier.
+
+The solver states that the ball nr. 11 is lighter.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 24 / 26...
+This is the randomly chosen secret solution:
+the ball nr. 11 is heavier.
+
+Weighting nr. 1:
+The solver puts the balls (5, 6, 7, 8) on the left plate and the balls (9, 10, 11, 12) on the right plate.
+The oracle reveals that the right plate is heavier.
+
+Weighting nr. 2:
+The solver puts the balls (7, 9, 10) on the left plate and the balls (8, 11, 12) on the right plate.
+The oracle reveals that the right plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 11 on the left plate and the ball 12 on the right plate.
+The oracle reveals that the left plate is heavier.
+
+The solver states that the ball nr. 11 is heavier.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 25 / 26...
+This is the randomly chosen secret solution:
+the ball nr. 12 is lighter.
+
+Weighting nr. 1:
+The solver puts the balls (5, 6, 7, 8) on the left plate and the balls (9, 10, 11, 12) on the right plate.
+The oracle reveals that the left plate is heavier.
+
+Weighting nr. 2:
+The solver puts the balls (7, 9, 10) on the left plate and the balls (8, 11, 12) on the right plate.
+The oracle reveals that the left plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 11 on the left plate and the ball 12 on the right plate.
+The oracle reveals that the left plate is heavier.
+
+The solver states that the ball nr. 12 is lighter.
+The oracle reveals that the solver has won this game.
+
+------------------------------------------------------------------------------------------------------------------------
+Playing game 26 / 26...
+This is the randomly chosen secret solution:
+the ball nr. 12 is heavier.
+
+Weighting nr. 1:
+The solver puts the balls (5, 6, 7, 8) on the left plate and the balls (9, 10, 11, 12) on the right plate.
+The oracle reveals that the right plate is heavier.
+
+Weighting nr. 2:
+The solver puts the balls (7, 9, 10) on the left plate and the balls (8, 11, 12) on the right plate.
+The oracle reveals that the right plate is heavier.
+
+Weighting nr. 3:
+The solver puts the ball 11 on the left plate and the ball 12 on the right plate.
+The oracle reveals that the right plate is heavier.
+
+The solver states that the ball nr. 12 is heavier.
+The oracle reveals that the solver has won this game.
+
+
+THE SOLVER WON 25 / 26 GAMES. ON AVERAGE, THE SOLVER WAS 96.15% SURE OF ITS GUESS.
+========================================================================================================================
+
+
+Process finished with exit code 0
